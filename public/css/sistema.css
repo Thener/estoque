@@ -1,0 +1,100 @@
+body {
+	background-color: #E6E6E6 !important;
+}
+
+.conteudo {
+	padding: 0 20px;
+}
+
+.cabecalho {
+    background-color: #337ab7;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 14px;	
+}
+
+.maskdate {
+	width: 120px !important;
+}
+
+.maskmoney {
+	width: 140px !important;
+}
+
+.maskcpf {
+	width: 140px !important;
+}
+
+.maskcep {
+	width: 110px !important;
+}
+
+.input-group-addon {
+	cursor: pointer;
+}
+
+.iconeHome {
+    cursor: pointer;
+    float: left;
+    height: 64px;
+    margin-right: 40px;
+    opacity: 0.8;
+    padding-top: 64px;
+    text-align: center;
+    width: 64px;
+}
+
+.iconeHome:HOVER {
+	opacity: 1;
+}
+
+.iconeHomeCalculadora {
+	background: url(../img/home/calculadora.png) no-repeat;
+}
+
+.iconeHomeCalculadora2 {
+	background: url(../img/home/calculadora2.png) no-repeat;
+}
+
+.iconeHomeMoney {
+	background: url(../img/home/money.png) no-repeat;
+}
+
+.iconeHomeTroca {
+	background: url(../img/home/troca.png) no-repeat;
+}
+
+.iconeHomeResumo {
+	background: url(../img/home/resumo.png) no-repeat;
+}
+
+.clienteNome {
+	width: 400px;
+}
+
+.email {
+	width: 400px;
+}
+
+.uf {
+	width: 50px;
+}
+
+.telefone {
+	width: 130px;	
+}
+
+.endNumero {
+	width: 130px;
+}
+
+.endComplemento {
+	width: 150px;
+}
+
+.endLogradouro {
+	width: 400px;
+}

@@ -1,0 +1,29 @@
+#idProduto {
+	width: 140px !important;
+}
+
+#nomeProduto {
+	width: 500px !important;
+}
+
+#tipoVenda {
+	width: 140px !important;
+}
+
+#quantidade {
+	width: 80px !important;
+}
+
+.qtde {
+	width: 80px !important;
+}
+
+.vlrItem {
+	width: 150px !important;
+	text-align: right;
+}
+
+legend {
+	color: #337ab7;
+	font-weight: bold;
+}

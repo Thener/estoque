@@ -1,0 +1,145 @@
+﻿================================================================================================================
+Cadastros:
+================================================================================================================
+
+	1. Usuário - [CONCLUIDO] - Pedro 
+
+	2. Categoria - Thener (Model/controller prontos. Falta telas)
+
+		> id
+		> nome
+	
+	3. Produto - [CONCLUÍDO] - Thener 
+	
+		> id
+		> nome
+		> categoria
+		> preco_venda
+		> preco_custo
+		> codigo_barra
+		> alerta_estoque_minimo
+		> estoque_atual
+		
+	4. Fornecedor - Thener
+	
+		> id
+		> nome
+		> endereco
+		> telefone
+		> email	
+
+	5. Fornecedor_Produto - Thener
+	
+		> id
+		> fornecedor_id
+		> produto_id
+		> preco_custo		
+		
+	6. Movimento_Estoque - Thener
+	
+		> id
+		> produto_id
+		> fornecedor_id
+		> data_movimento
+		> quantidade
+		> operacao (entrada / saida)
+		> tipo_transacao (compra/venda/troca/devolução)
+		> preco_custo
+		> preco_venda
+	
+	7. Caixa - [CONCLUIDO] - Pedro
+	
+		> id
+		> data_caixa
+		> data_fechamento
+		> aberto_por
+		> fechado_por
+		> saldo_inicial
+		> total_entradas
+		> total_saidas
+		> saldo_final
+
+	8. Movimento_Caixa - [CONCLUIDO] - Pedro
+	
+		> id
+		> caixa_id
+		> descricao
+		> tipo_movimento (entrada/saida)
+		> valor_movimento
+		> user_id
+		> venda_id
+		
+	9. Banco - [CONCLUIDO] - Thener
+		
+		> id
+		> nome
+		
+	10. Cliente - [CONCLUIDO] - Thener
+	
+		* Migration ok!
+		
+		> id
+		> nome
+		> data_nascimento
+		> endreco
+		> telefone
+		> email		
+				
+	11. Venda - Pedro
+	
+		* Migration ok!
+	
+		> id 
+		> caixa_id
+		> data_venda
+		> tipo_venda (vista/parcelado)
+		> cliente_id
+		> valor_desconto
+		> perc_desconto
+		> preco_venda (total de itens x preco_venda)
+		
+	12. Venda_Produto - Pedro
+	
+		* Migration ok!
+		
+		> id
+		> venda_id
+		> produto_id
+		> preco_custo
+		> quantidade
+		> preco_venda
+		> preco_item
+		
+	13. Venda_Parcela - Pedro
+	
+		* Migration ok!
+		
+		> id
+		> venda_id
+		> numero_parcela
+		> forma_pagto (dinheiro/cheque/cartao/crediario)
+		> cheque_numero
+		> cheque_cliente
+		> banco_id
+		> valor_parcela
+		> data_vencimento
+		> data_pagamento
+		> juros_multa
+			
+	14. Contas_Pagar - Pedro
+	
+		> id
+		> descricao
+		> forma_pagto (boleto/cheque/dinheiro)
+		> cheque_numero
+		> banco_id
+		> data_vencimento
+		> data_pagamento
+		> valor_devido
+		> valor_pago
+
+================================================================================================================		
+MELHORIAS
+================================================================================================================		
+
+1. Emissão de carnê

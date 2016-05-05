@@ -1,0 +1,10 @@
+/vendor
+/node_modules
+Homestead.yaml
+.env
+/*.buildpath
+/.project
+/.settings
+/vendor/composer
+/vendor/autoload.php
+/storage/logs

@@ -1,0 +1,21 @@
+﻿================================================================================================================
+PENDÊNCIAS - PEDRO
+================================================================================================================
+
+[CONCLUIDO] Terminar CRUD cadastro de usuários
+
+[CONCLUIDO] Trabalhando na abertura/fechamento de caixa
+
+[CONCLUIDO] Trabalhando no movimento de caixa
+
+Trabalhando na tela de vendas: 
+	- autocomplete  -> ok
+	- busca de preço -> ok
+	- listar produtos da venda -> ok
+	- opção para limpar tudo / limpar item ->
+	- venda dinheiro -> ok
+	- venda cartão -> ok
+	
+	... iniciar venda a crediário
+	
+	

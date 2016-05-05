@@ -1,0 +1,65 @@
+﻿------------------------------------------------------------------------
+INSTALAÇÃO
+------------------------------------------------------------------------
+
+1. Instalar o composer
+ 
+2. Abra o cmd do windows, entre na pasta "www" do wamp, e execute:
+
+	composer create-project laravel/laravel nome_do_seu_projeto --prefer-dist
+
+3. Testar o funcionamento:
+
+	- pelo cmd, acesse o diretório do projeto
+	- digite: php artisan serve
+	- acesse pelo endereço informado
+
+------------------------------------------------------------------------
+ERROS ENCONTRADOS
+------------------------------------------------------------------------
+
+1. Ao executar [php artisan migrate], erro [PDOException could not find driver]
+Solução: abra o php.ini do wamp e descomente as entensões extension=php_pdo_pgsql.dll e extension=php_pgsql.dll
+
+2. Ao executar [php artisan migrate:rollback], erro [Symfony\Component\Debu\Exception\FatalErrorException class xxx not foud]
+Solução: executar [composer dump-autoload] e depois tentar o rollback novamente
+
+3. Ao executar [Composer update], erro [Symfony\Component\Debu\Exception\FatalErrorException class xxx not foud]
+Solução: executar [composer update --no-scripts] - Atualizando o Composer sem os comandos de pré e post update. 
+
+------------------------------------------------------------------------
+ARTISAN
+------------------------------------------------------------------------
+
+Levantar o servidor: php artisan serve
+Executar migrations: php artisan migrate
+Executar os seeds (carga): php artisan db:seed
+
+------------------------------------------------------------------------
+LINKS
+------------------------------------------------------------------------
+Opções de grid:
+http://www.trirand.com/blog/jqgrid/jqgrid.html
+http://www.trirand.com/blog/?page_id=5
+http://www.guriddo.net/demo/bootstrap/
+
+Configurar o wamp para rodar o projeto (eliminar uso de artisan serve)
+http://www.terrymatula.com/development/2012/setting-up-a-virtual-host-for-wamp-and-laravel/
+
+Para trabalhar com Forms:
+http://laravelcollective.com/docs/5.1/html
+
+Máscaras usadas:
+http://digitalbush.com/projects/masked-input-plugin/
+
+Calendário: download e configurações
+http://eternicode.github.io/bootstrap-datepicker/?markup=input&format=&weekStart=&startDate=&endDate=&startView=0&minViewMode=0&todayBtn=false&clearBtn=false&language=en&orientation=auto&multidate=&multidateSeparator=&keyboardNavigation=on&forceParse=on#sandbox
+
+MaskMoney:
+http://plentz.github.io/jquery-maskmoney/
+
+AutoComplete:
+https://github.com/devbridge/jQuery-Autocomplete
+
+Problema do token ao submeter form via ajax:
+http://blog.vluzrmos.com.br/laravel-5-ajax-token-mismatch-exception/
